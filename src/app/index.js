@@ -2,16 +2,8 @@
 
 import React from 'react';
 import {render} from 'react-dom';
-import Header from './components/Header';
+import App from './components/App';
 
-class App extends React.Component {
-  render () {
-    return (
-      <div className='container'>
-        <Header />
-      </div>
-    );
-  }
-}
+const app = document.getElementById('app');
 
-render(<App/>, window.document.getElementById('app'));
+render(<App />, app);
