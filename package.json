@@ -13,12 +13,13 @@
     "url": "git+https://github.com/fee-slc-2016/react-memory-game.git"
   },
   "contributors": [
+    "Trevor Rapp <trrapp@gmail.com> (http://web-karma.org)",
     "Joni Weiss <me@joniweiss.com> (http://joniweiss.com)",
     "Kelly Furness <kelly.n.waite@gmail.com> (http://kellyfurness.com)",
     "Ashly LaMarr <surlymae@gmail.com> (http://github.com/SurlyMae)",
     "Drew Warren <drewwarrentiy@gmail.com> (http://github.com/drewwarrentiy)",
     "Kevin Black <Kevin_Jay_Black@hotmail.com> (http://github.com/kevinutah-tiy)",
-    "Matt Sadauckas <matthewsadauckas@gmail.com (https://github.com/matsad3547)"
+    "Matt Sadauckas <matthewsadauckas@gmail.com> (https://github.com/matsad3547)"
   ],
   "license": "ISC",
   "bugs": {
