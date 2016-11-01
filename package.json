@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
     "start": "npm run build",
-    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+    "build:prod": "webpack -p && cp src/index.html dist/index.html && webpack-dev-server"
   },
   "repository": {
     "type": "git",
