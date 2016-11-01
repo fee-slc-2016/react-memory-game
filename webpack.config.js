@@ -23,7 +23,12 @@ var config = {
         }
       }
     ]
-  }
+  },
+  plugins: debug ? [] : [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(true),
+    new webpack.optimize.UglifyJsPlugin({})
+  ]
 };
 
 module.exports = config;
