@@ -4,12 +4,9 @@
   "description": "A Game of Memory, created using React by the most awesome group of people ever!",
   "main": "index.js",
   "scripts": {
-    "webpack:dev": "webpack -d",
-    "copy": "cp src/index.html dist/index.html && cp -R src/app/images dist/app",
-    "dev": "npm run webpack:dev && npm run copy && webpack-dev-server --content-base src/ --inline --hot",
-    "dev:start": "npm run webpack:dev && npm run copy && npm start",
-    "postinstall": "webpack -p && npm run copy",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "webpack -d && cp src/index.html dist/index.html && cp -R src/app/images dist/app && webpack-dev-server --content-base src/ --inline --hot",
+    "postinstall": "webpack -p && cp src/index.html dist/index.html && cp -R src/app/images dist/app"
   },
   "repository": {
     "type": "git",
