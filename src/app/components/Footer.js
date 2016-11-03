@@ -18,6 +18,3 @@ export default class Footer extends React.Component {
     );
   }
 }
-
-
-// notes.  Use double quotes for Json.  Start with an array brackets.  Separate with colon.  comma at end of entry.  Each side needs quote unless an object or a number. No comma at the end of the last object in the Json.
