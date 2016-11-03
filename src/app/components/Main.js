@@ -9,7 +9,8 @@ export default class Main extends React.Component {
   render () {
     return (
       <div className="main">
-        <h6> the main</h6>
+        <h6> {blogdata[0].title}</h6>
+        <p>{blogdata[0].posted.day}</p>
       </div>
     )
   }
