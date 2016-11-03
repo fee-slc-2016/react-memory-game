@@ -34,10 +34,6 @@ var config = {
         test: /\.(jpe?g|png|gif|svg)(\?v=\d+\.\d+\.\d+)?$/i,
         loader: 'file-loader?name=[path][name].[ext]?[hash:10]',
          exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /\.json$/,
-        loader: "json"
       }
     ]
   },
