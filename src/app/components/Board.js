@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+const DEFAULT_BOARD_SIZE = 8;
+
 const cheeses = ['cheese1.jpeg', 'cheese2.jpg', 'cheese3.png', 'cheese4.png', 'cheese5.jpg'];
 const fisherYates = (arr) => {
   for (let i = arr.length - 1; i > 0; i--) {
@@ -29,7 +31,7 @@ export default class Board extends React.Component {
 
   render() {
 
-    const halfBoard = this.props.board.size / 2;
+    const halfBoard = (this.board === undefined) ? DEFAULT_BOARD_SIZE/2 : this.props.board.size / 2;
 
     let randoCheese = randCheese(cheeses, halfBoard);
     console.log(randoCheese);
