@@ -29,11 +29,14 @@ export default class App extends React.Component {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/settings'>Settings</Link></li>
+            <li><Link to='/board/6'>Small Board</Link></li>
+
           </ul>
           <hr />
           <Match exactly pattern='/' component={Board} />
           <Match pattern='/about' component={About}/>
           <Match pattern='/settings' component={Settings}/>
+          <Match pattern='/board/:size' component={Board}/>
         </div>
       </Router>
     );
