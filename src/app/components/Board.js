@@ -29,12 +29,14 @@ export default class Board extends React.Component {
 
 
 
-  render() {
+  render(params) {
+
+console.log('params: ', params);
 
     const halfBoard = (this.board === undefined) ? DEFAULT_BOARD_SIZE/2 : this.props.board.size / 2;
 
     let randoCheese = randCheese(cheeses, halfBoard);
-    console.log(randoCheese);
+    // console.log(randoCheese);
 
     return (
       <div className="board">
