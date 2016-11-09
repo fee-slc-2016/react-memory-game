@@ -29,11 +29,16 @@ export default class Board extends React.Component {
 
 
 
-  render(params) {
+  render() {
 
-console.log('params: ', params);
+const params = (this.props.params === undefined) ? {} : this.props.params
+const imgPath = __dirname + "app/images/card_images/"
+const boardSize = params.size || DEFAULT_BOARD_SIZE
 
-    const halfBoard = (this.board === undefined) ? DEFAULT_BOARD_SIZE/2 : this.props.board.size / 2;
+console.log('boardSize:', boardSize);
+console.log('full `this.props`:', this.props);
+
+    const halfBoard = boardSize / 2;
 
     let randoCheese = randCheese(cheeses, halfBoard);
     // console.log(randoCheese);
@@ -42,7 +47,7 @@ console.log('params: ', params);
       <div className="board">
         {randoCheese.map((c, i, a) =>
           <div className="card" key={i + 1}>
-            <img src={"./app/images/card_images/" + c} />
+            <img src={imgPath + c} />
            </div>
         )}
       </div>
